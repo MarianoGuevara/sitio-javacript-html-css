@@ -1,0 +1,213 @@
+*{
+    font-family: "Rubik", sans-serif;
+}
+
+body{
+    background-color: #e6e6e6;
+}
+
+/* HEADER */
+#header{
+    background-color: rgb(26, 26, 26);
+    color: #e6e6e6;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.opciones{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADER DROPDOWN */
+#header .d:hover{
+    transform: scale(1.08);
+    transition: all 350ms ease-in-out;
+    color: whitesmoke;
+}
+
+.logo{
+    margin-right: 10em;
+}
+
+.dropdown{
+    margin: 25px;
+}
+.rounded-pill, .dropdown-toggle{
+    background-color: rgb(41, 126, 41);
+    color: white;
+}
+.rounded-pill_dos, .dropdown-toggle_dos{
+    background-color: rgb(61, 96, 192);
+    color: white;
+}
+.espacio{
+    margin-left: 100px;
+}
+   
+
+
+/*FOOTER INDEX*/
+#footer{
+    background-color: rgb(26, 26, 26);
+    color: #797979;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_footer{
+    margin: 10vh;
+}
+
+#footer_pags_chiquitas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Fijar el footer */
+    bottom: 0; /* Posicionar el footer en la parte inferior */
+    width: 100%; /* El ancho del footer es igual al 100% del ancho de la pantalla */
+    background-color: rgb(26, 26, 26);
+    color: #797979;
+    padding: 20px; /* Agregar un relleno interno para separar el contenido del footer */
+}
+
+.texto_footer_chiquitas{
+    margin: 5vh;
+}
+
+
+
+
+/* CUERPO INDEX */
+
+#cuerpo_index{
+    background-color: #d1d1d1;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: caida-y-rebote 1s ease-in-out; /* Agrega la animación a todo el contenedor */
+    margin: 5vh;
+    border: 5px solid rgb(177, 177, 177);
+    padding: 20px
+}   
+
+.cuerpo_arriba, .cuerpo_abajo{
+    display: flex; /* Muestra los elementos del contenedor como una fila */
+    align-items: center; /* Alinea verticalmente los elementos del contenedor */
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor_texto1, .contenedor_texto2{
+    width: 50%;
+    float: left;
+    
+}
+
+.texto1, .texto2{    
+    text-align: center;
+    animation: caida-y-rebote 2s ease-in-out;
+    margin: 33px; /*GUARDA QUE HACE RUIDO ESTO */
+}
+
+.imagen1_contenedor, .imagen2_contenedor{
+    width: 50%;
+    float: right;
+    animation: caida-y-rebote 2s ease-in-out;
+} 
+
+@keyframes caida-y-rebote {
+    0% {
+      transform: translateY(-100%);
+    }
+    20% {
+      transform: translateY(10%);
+    }
+    40% {
+      transform: translateY(-5%);
+    }
+    60% {
+      transform: translateY(2.5%);
+    }
+    80% {
+      transform: translateY(-1.25%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  @keyframes caida-y-rebote-img {
+    0% {
+      transform: translateY(-100%);
+    }
+    20% {
+      transform: translateY(10%);
+    }
+    40% {
+      transform: translateY(-5%);
+    }
+    60% {
+      transform: translateY(2.5%);
+    }
+    80% {
+      transform: translateY(-1.25%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  @keyframes caida-y-rebote-text {
+    0% {
+      transform: translateY(-100%);
+    }
+    20% {
+      transform: translateY(10%);
+    }
+    40% {
+      transform: translateY(-5%);
+    }
+    60% {
+      transform: translateY(2.5%);
+    }
+    80% {
+      transform: translateY(-1.25%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+
+
+
+
+/* CUERPO PAG_UNO */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin: 23px;
+}
